@@ -27,15 +27,7 @@ function increment() {
       let dakika = Math.floor(time / 10 / 60);
       let saniye = Math.floor(time / 10 % 60);
       let salise = time % 10;
-
-      if (dakika < 10) {
-        dakika = "0" + dakika;
-      }
-
-      if (saniye < 10) {
-        saniye = "0" + saniye;
-      }
-
+  
       document.getElementById("output").innerHTML = dakika + ":" + saniye + ":" + "0" + salise;
       increment();
     }, 100);
